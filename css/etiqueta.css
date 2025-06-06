@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #158eff;
+  width: fit-content;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 24px 12px;
+}
+
+.etiqueta {
+  text-transform: uppercase;
+  border: 1px solid #000;
+  width: 200px;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: visible;
+  height: 15.5cm;
+  margin: 4px;
+  position: relative;
+}
+
+.etiqueta-fino {
+  width: 3.3cm;
+  height: 12.5cm;
+}
+
+.etiqueta-largo {
+  width: 5.3cm;
+  height: 15.5cm;
+}
+
+.logo-central {
+  top: 30%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo-prefeitura {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-via {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.conteudo .informations {
+  text-align: center;
+  width: max-content;
+  transform: rotate(90deg);
+}
+
+.nome-sec {
+  width: 95%;
+}
+
+.etiqueta-fino .conteudo .informations p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.etiqueta-largo .conteudo .informations p {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.logo-rodape {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+@media print {
+  button {
+    display: none;
+  }
+}
