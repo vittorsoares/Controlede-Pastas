@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerar Etiquetas</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
-    <?php include './layout/cabecalho.html'; ?>
-    
-    <form id="etiquetaForm" action="./backend/gerar.php" method="POST">
+    <?php include '../layout/cabecalho.html'; ?>
+
+    <form id="etiquetaForm" action="../../src/backend/gerar.php" method="POST">
         <header class="cabecalho-form">
             <label for="via">Selecione a Via</label>
             <select id="via" name="via" required>
@@ -22,7 +22,7 @@
                 <option value="Prefeitura">Prefeitura</option>
             </select>
             <label for="referencia">Referência:</label>
-            <input type="month" id="referencia" name="referencia">
+            <input type="month" id="referencia" name="referencia" required>
         </header>
 
         <div id="secretarias">
@@ -180,7 +180,7 @@
         <button type="submit">Gerar Etiquetas</button>
     </form>
 
-    <script src="./script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 </body>
 

@@ -37,6 +37,7 @@ form#etiquetaForm {
     align-self: center;
     padding: 20px;
     margin-top: 30px;
+    box-shadow: #00000017 5px 5px 8px;
 }
 
 #secretarias {
@@ -50,7 +51,7 @@ form#etiquetaForm {
 .sec-area {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #00000041;
+    border-bottom: 1px solid #C8C9FE;
     padding-bottom: 6px;
 }
 
@@ -71,6 +72,14 @@ button {
     cursor: pointer;
 }
 
+input,
+select {
+    background-color: #F0F1F5;
+    border-radius: 4px;
+    border: 1px solid #c8c9fe5e;
+    padding: 4px 12px;
+}
+
 /*ESTILOS DA PAGINA RELATORIOS*/
 
 main.principal-relatorio {
@@ -85,16 +94,26 @@ main.principal-relatorio {
     margin-top: 30px;
 }
 
-main form {
-    background: #F0F1F5;
+#form-oficio,
+#form-tabela {
+    border-radius: 0;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 18px;
-    border-radius: 8px;
     gap: 8px;
+}
+
+#form-tabela {
+    padding-left: 35px;
+    border-left: 3px solid #F4F4F4;
 }
 
 main form input {
     width: 80px;
+}
+
+#form-oficio input {
+    min-width: 200px;
 }

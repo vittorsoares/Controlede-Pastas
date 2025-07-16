@@ -11,8 +11,8 @@ include './salvar_dados.php'
 <head>
   <meta charset="UTF-8">
   <title>Etiquetas Geradas</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/etiqueta.css">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/etiqueta.css">
 </head>
 
 <body>
@@ -35,8 +35,8 @@ include './salvar_dados.php'
 
         // Monta o HTML com a classe dinâmica
         $output .= "<div class='etiqueta $classe'>
-          <img class='logo-central' src=\"../img/logo_central.jpeg\">
-          <img class='logo-prefeitura' src=\"../img/logo.png\">
+          <img class='logo-central' src=\"../assets/img/logo_central.jpeg\">
+          <img class='logo-prefeitura' src=\"../assets/img/logo.png\">
           <strong class='info-via'>$via<br></strong>
           <div class='conteudo'>
             <div class='informations'>
@@ -45,7 +45,7 @@ include './salvar_dados.php'
               <p>$pastaInfo</p>
             </div>
           </div>
-          <img class='logo-rodape' src=\"../img/rodape.jpeg\">
+          <img class='logo-rodape' src=\"../assets/img/rodape.jpeg\">
         </div>";
       }
       return $output;
@@ -78,8 +78,6 @@ include './salvar_dados.php'
       }
     }
     ?>
-
-
 
   </div>
 </body>
